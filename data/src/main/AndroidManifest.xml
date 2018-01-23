@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="proj.me.data">
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <provider
+            android:name=".provider.NoteProvider"
+            android:authorities="proj.me.notetaking.note"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:label="NoteTakingProvider"
+            >
+            <!--android:readPermission="proj.me.notetaking.dictionary.READ"
+            android:writePermission="proj.me.notetaking.dictionary.WRITE"-->
+        </provider>
+
+    </application>
+
+</manifest>
